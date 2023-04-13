@@ -21,14 +21,14 @@ form.addEventListener('submit', () => {
 
     console.log(data)
     
-    // fetch('https://eodh6njvzgfl22j.m.pipedream.net', {
-    //     method: 'POST',
-    //     headers: {
-    //         'Content-Type': 'application/json',
-    //         'applicantEmail': 'test-m@checklearn.com'
-    //     },
-    //     body: JSON.stringify(data)
-    // })
+    fetch('https://eodh6njvzgfl22j.m.pipedream.net', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'applicantEmail': 'test-m@checklearn.com'
+        },
+        body: JSON.stringify(data)
+    })
 
 
     // Reset the form
