@@ -53,6 +53,7 @@ input, textarea {
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: groove;
+    border-bottom: 1px solid black;
 }
 
 select {
@@ -64,6 +65,7 @@ select {
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: groove;
+    
 }
 
 input::placeholder {
@@ -177,7 +179,6 @@ textarea {
     label {
         font-size: 1.3rem;    
     }
-
 
     input, select, textarea {
         width: 100%;
