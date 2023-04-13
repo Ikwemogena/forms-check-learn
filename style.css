@@ -161,33 +161,32 @@ textarea {
     }
 
     h2 {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
     }
 
     .form {
-        padding: 1rem;
+        padding: 2rem 1rem;
         margin: 1rem;
         font-size: 0.7rem;
     }
 
-    .container > div {
-        /* font-size: 2rem; */
-        /* padding-bottom: 2rem; */
+    .form > label {
+        padding-bottom: 2rem; 
     }
 
     label {
-        font-size: 1.3rem;
-        padding-bottom: 3rem;
-        
+        font-size: 1.3rem;    
     }
+
+
     input, select, textarea {
-        width: 70%;
-        font-size: 1.2rem;
+        width: 100%;
+        font-size: 1rem;
     }
 
     button {
-        bottom: 0;
-        right: 0;
+        bottom: -40px;
+        right: -5px;
         width: 100px;
         height: 100px;
         font-size: 16px;
@@ -197,4 +196,20 @@ textarea {
         transform: scale(0.8);
     }
 
-}
+    .notification {
+        font-size: 1rem;
+        position: fixed;
+        top:20px;
+        max-width: 500px;
+        left:60%;
+        transform: translateX(-50%);
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        z-index: 9999;
+    }
+
+} 
+  
