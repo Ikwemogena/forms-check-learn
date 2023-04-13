@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        <form class="form">
+            <h2>Hello, Design Agency!</h2>
+            <div>
+            <!-- first-name -->
+            <label for="">My name is</label> 
+            <input type="text" type="text"
+            id="name"
+            name="name"
+            required
+            minlength="4"
+            maxlength="20"
+            size="20" placeholder="YOUR NAME"> 
+            <!-- company name -->
+            
+            <label for="">from</label> <input type="text" type="text"
+            id="company"
+            name="company"
+            required
+            minlength="4"
+            maxlength="30"
+            size="20" placeholder="COMPANY NAME">
+        </div>
+
+        <div>
+            <label for="">The company size is</label> 
+            <select name="companySize" id="companySize" required>
+                <option value="" disabled selected hidden>SELECT COMPANY SIZE</option>
+                <option value="0-10">0-10</option>
+                <option value="11-50">11-50</option>
+                <option value="51-100">51-100</option>
+            </select>
+
+            <label for="">& Funding Stage at</label>
+            <select name="fundingStage" id="fundingStage">
+              <option value="">SELECT FUNDING STAGE</option>
+              <option value="Under ₦100k">Under ₦100k</option>
+              <option value="₦100k-₦500k">₦100k - ₦500k</option>
+              <option value="₦500k-₦1m">₦500k - ₦1m</option>
+            </select>            
+        </div>
+
+        <div>
+            <label for="">You can improve my experience by</label> <textarea name="other-message" id="my-textarea" rows="1"></textarea>
+        </div>
+
+        <div>
+            <label for="">Contact me at </label><input
+            type="email"
+            id="workEmail"
+            name="workEmail"
+            placeholder="YOUR WORK EMAIL"
+            required
+          />
+        </div>
+
+        <button type="submit">Submit</button>
+        </form>
+
+        <!-- toast notif -->
+      <div id="notification" class="notification success">
+          <div class="message">The form has been submitted successfully!</div>
+          <div class="close-btn">&times;</div>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+    
+</body>
+</html>
